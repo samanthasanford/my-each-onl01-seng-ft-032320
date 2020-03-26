@@ -1,10 +1,13 @@
 
 
-def my_each
-kitties = ["Max", "Peaches", "Gilly"]
-  my_each(kitties) do |i|
-    puts i 
-    
-  end
+def my_each(collection)
+  puts i 
+  
+  while i != collection.length 
+  yield(collection[i])
+  i += 1 
+end
+
+collection 
   
 end
